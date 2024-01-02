@@ -25,6 +25,7 @@ To install tinystatus:
 * To add incidents or maintenance, edit `incidents.txt`
 * Generate status page `./tinystatus > index.html`
 * Serve the page with your favorite web server
+* Run the script every X minutes with crontab
 
 ## Configuration file
 
@@ -41,3 +42,12 @@ Command can be:
 There are also `http4`, `http6`, `ping4`, `ping6`, `port4`, `port6` for IPv4 or IPv6 only check.  
 Note: `port4` and `port6` require OpenBSD `nc` binary.
 
+## Command line usage
+
+'''
+$ ./tinystatus --help
+Usage: ./tinystatus -c <checkfile>
+Options:
+  -c, --checkfile <file>   Specify the check file (default: checks.csv)
+  -h, --help               Display this help message
+'''
