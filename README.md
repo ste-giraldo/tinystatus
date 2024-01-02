@@ -44,10 +44,10 @@ Note: `port4` and `port6` require OpenBSD `nc` binary.
 
 ## Command line usage
 
-'''
+```
 $ ./tinystatus --help
 Usage: ./tinystatus -c <checkfile>
 Options:
   -c, --checkfile <file>   Specify the check file (default: checks.csv)
   -h, --help               Display this help message
-'''
+```
