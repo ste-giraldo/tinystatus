@@ -26,7 +26,7 @@ To install tinystatus:
 * To add incidents or maintenance, edit `incidents.txt`
 * Generate status page `./tinystatus > index.html`
 * Serve the page with your favorite web server
-* Run the script every X minutes with crontab
+* Run the script every X minutes with crontab: `*/15 * * * * /opt/tinystatus/tinystatus -c /opt/tinystatus/checks.csv > /var/www/html/tinystatus.html 2>/dev/null`
 
 ## Configuration file
 
