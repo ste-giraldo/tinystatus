@@ -10,7 +10,8 @@ tinystatus generate an html status page via shell script.
 * Minimal dependencies (curl, nc and coreutils)
 * Easy configuration and customisation
 * Tiny (~1kb) optimized result page
-* Incident history (manual)
+* Incident history (manual) | Currently commented
+* Added config file inline option to run multiple instances from the original project
 
 ## Demo
 
@@ -42,7 +43,7 @@ Command can be:
 There are also `http4`, `http6`, `ping4`, `ping6`, `port4`, `port6` for IPv4 or IPv6 only check.  
 Note: `port4` and `port6` require OpenBSD `nc` binary.
 
-## Command line usage
+## Command line usage example
 
 ```
 $ ./tinystatus --help
@@ -50,4 +51,6 @@ Usage: ./tinystatus -c <checkfile>
 Options:
   -c, --checkfile <file>   Specify the check file (default: checks.csv)
   -h, --help               Display this help message
+
+$ ./tinystatus -c checks.csv > /var/www/html/tinystatus.html
 ```
